@@ -1,5 +1,5 @@
 let img = [
-    '<img class="img-1" src="img/01.webp">',
+    '<img class="img-1" src="https://upload.wikimedia.org/wikipedia/it/thumb/f/f0/Screenshot_Videoclip_Never_Gonna_Give_You_Up.png/390px-Screenshot_Videoclip_Never_Gonna_Give_You_Up.png">',
     '<img class="img-1" src="img/02.webp">',
     '<img class="img-1" src="img/03.webp">',
     '<img class="img-1" src="img/04.webp">',
