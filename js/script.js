@@ -17,16 +17,26 @@ let imgIndex = 0;
 imgContainer.innerHTML = img[imgIndex];
 
 prevB.addEventListener("click", function(){
-    console.log("sesso");
-    imgIndex -= 1;
+    if(imgIndex == 0){
+        imgIndex = 4;   
+    }
+    else{
+        imgIndex -= 1;
+    }
     imgContainer.innerHTML = img[imgIndex];
+
 
 });
 
 nextB.addEventListener("click", function(){
     imgIndex += 1;
+    if(imgIndex > 4){
+        imgIndex = 0;
+        imgContainer.innerHTML = img[imgIndex];
+        console.log(imgIndex);
+    }
     imgContainer.innerHTML = img[imgIndex];
-    console.log("sesso");
+
 });
 
 function pickRandomFromArray(arr){
