@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+}
+.img-1{
+    width: 500px;
+    height: auto;
+}
+
+.prev, .next{
+    transition: all .5s ease-in-out;
+}
+
+.prev:hover, .next:hover{
+    font-size: 1.25rem;
+}
