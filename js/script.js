@@ -8,11 +8,26 @@ let img = [
 
 let selImg = pickRandomFromArray(img);
 
-for (let index = 0; index < img.length; index++) {
-    const element = img[index];
-    console.log(element);
+const prevB = document.querySelector(".prev");
+const nextB = document.querySelector(".next");
+const imgContainer = document.querySelector(".img-cont");
 
-}
+let imgIndex = 0;
+
+imgContainer.innerHTML = img[imgIndex];
+
+prevB.addEventListener("click", function(){
+    console.log("sesso");
+    imgIndex -= 1;
+    imgContainer.innerHTML = img[imgIndex];
+
+});
+
+nextB.addEventListener("click", function(){
+    imgIndex += 1;
+    imgContainer.innerHTML = img[imgIndex];
+    console.log("sesso");
+});
 
 function pickRandomFromArray(arr){
     return arr[Math.floor(Math.random() * arr.length)];
